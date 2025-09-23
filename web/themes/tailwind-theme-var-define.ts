@@ -750,17 +750,17 @@ const vars = {
 
   'saas-background': 'var(--color-saas-background)',
   'saas-pricing-grid-bg': 'var(--color-saas-pricing-grid-bg)',
-  'saas-dify-blue-static': 'var(--color-saas-genai-blue-static)',
-  'saas-dify-blue-static-hover': 'var(--color-saas-genai-blue-static-hover)',
-  'saas-dify-blue-accessible': 'var(--color-saas-genai-blue-accessible)',
-  'saas-dify-blue-inverted': 'var(--color-saas-genai-blue-inverted)',
-  'saas-dify-blue-inverted-dimmed': 'var(--color-saas-genai-blue-inverted-dimmed)',
+  'saas-genai-blue-static': 'var(--color-saas-genai-blue-static)',
+  'saas-genai-blue-static-hover': 'var(--color-saas-genai-blue-static-hover)',
+  'saas-genai-blue-accessible': 'var(--color-saas-genai-blue-accessible)',
+  'saas-genai-blue-inverted': 'var(--color-saas-genai-blue-inverted)',
+  'saas-genai-blue-inverted-dimmed': 'var(--color-saas-genai-blue-inverted-dimmed)',
 
   'saas-background-inverted': 'var(--color-saas-background-inverted)',
   'saas-background-inverted-hover': 'var(--color-saas-background-inverted-hover)',
 
-  'dify-logo-dify-logo-blue': 'var(--color-dify-logo-dify-logo-blue)',
-  'dify-logo-dify-logo-black': 'var(--color-dify-logo-dify-logo-black)',
+  'genai-logo-genai-logo-blue': 'var(--color-genai-logo-genai-logo-blue)',
+  'genai-logo-genai-logo-black': 'var(--color-genai-logo-genai-logo-black)',
 
 }
 export default vars

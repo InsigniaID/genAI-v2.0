@@ -10,7 +10,7 @@ import { Theme } from '@/types/app'
 const BUTTON_CLASSNAME = {
   [SelfHostedPlan.community]: 'text-text-primary bg-components-button-tertiary-bg hover:bg-components-button-tertiary-bg-hover',
   [SelfHostedPlan.premium]: 'text-background-default bg-saas-background-inverted hover:bg-saas-background-inverted-hover',
-  [SelfHostedPlan.enterprise]: 'text-text-primary-on-surface bg-saas-dify-blue-static hover:bg-saas-dify-blue-static-hover',
+  [SelfHostedPlan.enterprise]: 'text-text-primary-on-surface bg-saas-genai-blue-static hover:bg-saas-genai-blue-static-hover',
 }
 
 type ButtonProps = {

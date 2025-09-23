@@ -33,10 +33,10 @@ const NewMCPCard = ({ handleCreate }: Props) => {
 
   const linkUrl = useMemo(() => {
     if (language.startsWith('zh_'))
-      return 'https://docs.dify.ai/zh-hans/guides/tools/mcp'
+      return 'https://docs.genai.ai/zh-hans/guides/tools/mcp'
     if (language.startsWith('ja_jp'))
-      return 'https://docs.dify.ai/ja_jp/guides/tools/mcp'
-    return 'https://docs.dify.ai/en/guides/tools/mcp'
+      return 'https://docs.genai.ai/ja_jp/guides/tools/mcp'
+    return 'https://docs.genai.ai/en/guides/tools/mcp'
   }, [language])
 
   const [showModal, setShowModal] = useState(false)
@@ -48,7 +48,7 @@ const NewMCPCard = ({ handleCreate }: Props) => {
           <div className='group grow rounded-t-xl' onClick={() => setShowModal(true)}>
             <div className='flex shrink-0 items-center p-4 pb-3'>
               <div className='flex h-10 w-10 items-center justify-center rounded-lg border border-dashed border-divider-deep group-hover:border-solid group-hover:border-state-accent-hover-alt group-hover:bg-state-accent-hover'>
-                <RiAddCircleFill className='h-4 w-4 text-text-quaternary group-hover:text-text-accent'/>
+                <RiAddCircleFill className='h-4 w-4 text-text-quaternary group-hover:text-text-accent' />
               </div>
               <div className='system-md-semibold ml-3 text-text-secondary group-hover:text-text-accent'>{t('tools.mcp.create.cardTitle')}</div>
             </div>

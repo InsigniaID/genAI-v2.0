@@ -1,6 +1,6 @@
 /** this file is used to embed the chatbot in a website
- * the difyChatbotConfig should be defined in the html file before this script is included
- * the difyChatbotConfig should contain the token of the chatbot
+ * the genaiChatbotConfig should be defined in the html file before this script is included
+ * the genaiChatbotConfig should contain the token of the chatbot
  * the token can be found in the chatbot settings page
  */
 
@@ -8,9 +8,9 @@
 
 (function () {
   // Constants for DOM element IDs and configuration key
-  const configKey = "difyChatbotConfig";
-  const buttonId = "dify-chatbot-bubble-button";
-  const iframeId = "dify-chatbot-bubble-window";
+  const configKey = "genaiChatbotConfig";
+  const buttonId = "genai-chatbot-bubble-button";
+  const iframeId = "genai-chatbot-bubble-window";
   const config = window[configKey];
   let isExpanded = false;
 
@@ -30,8 +30,8 @@
     flex-direction: column;
     justify-content: space-between;
     top: unset;
-    right: var(--${buttonId}-right, 1rem); /* Align with dify-chatbot-bubble-button. */
-    bottom: var(--${buttonId}-bottom, 1rem); /* Align with dify-chatbot-bubble-button. */
+    right: var(--${buttonId}-right, 1rem); /* Align with genai-chatbot-bubble-button. */
+    bottom: var(--${buttonId}-bottom, 1rem); /* Align with genai-chatbot-bubble-button. */
     left: unset;
     width: 24rem;
     max-width: calc(100vw - 2rem);
@@ -53,8 +53,8 @@
     flex-direction: column;
     justify-content: space-between;
     top: unset;
-    right: var(--${buttonId}-right, 1rem); /* Align with dify-chatbot-bubble-button. */
-    bottom: var(--${buttonId}-bottom, 1rem); /* Align with dify-chatbot-bubble-button. */
+    right: var(--${buttonId}-right, 1rem); /* Align with genai-chatbot-bubble-button. */
+    bottom: var(--${buttonId}-bottom, 1rem); /* Align with genai-chatbot-bubble-button. */
     left: unset;
     min-width: 24rem;
     width: 48%;
@@ -132,7 +132,7 @@
     });
 
     const baseUrl =
-      config.baseUrl || `https://${config.isDev ? "dev." : ""}udify.app`;
+      config.baseUrl || `https://${config.isDev ? "dev." : ""}ugenai.app`;
     const targetOrigin = new URL(baseUrl).origin;
 
     // pre-check the length of the URL
@@ -152,7 +152,7 @@
     function createIframe() {
       const iframe = document.createElement("iframe");
       iframe.allow = "fullscreen;microphone";
-      iframe.title = "dify chatbot bubble window";
+      iframe.title = "genai chatbot bubble window";
       iframe.id = iframeId;
       iframe.src = iframeUrl;
       iframe.style.cssText = originalIframeStyleText;
@@ -214,10 +214,10 @@
       const targetIframe = document.getElementById(iframeId);
       if (!targetIframe || event.source !== targetIframe.contentWindow) return;
 
-      if (event.data.type === 'dify-chatbot-iframe-ready') {
+      if (event.data.type === 'genai-chatbot-iframe-ready') {
         targetIframe.contentWindow?.postMessage(
           {
-            type: 'dify-chatbot-config',
+            type: 'genai-chatbot-config',
             payload: {
               isToggledByButton: true,
               isDraggable: !!config.draggable,
@@ -227,7 +227,7 @@
         );
       }
 
-      if (event.data.type === 'dify-chatbot-expand-change') {
+      if (event.data.type === 'genai-chatbot-expand-change') {
         toggleExpand();
       }
     });
