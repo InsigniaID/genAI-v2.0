@@ -750,16 +750,16 @@ html[data-theme="light"] {
 
   --color-saas-background: #ffffff;
   --color-saas-pricing-grid-bg: rgb(200 206 218 / 0.5);
-  --color-saas-dify-blue-static: #0033ff;
-  --color-saas-dify-blue-static-hover: #002cd6;
-  --color-saas-dify-blue-accessible: #0033ff;
-  --color-saas-dify-blue-inverted: #0033ff;
-  --color-saas-dify-blue-inverted-dimmed: #0033ff;
+  --color-saas-genai-blue-static: #0033ff;
+  --color-saas-genai-blue-static-hover: #002cd6;
+  --color-saas-genai-blue-accessible: #0033ff;
+  --color-saas-genai-blue-inverted: #0033ff;
+  --color-saas-genai-blue-inverted-dimmed: #0033ff;
 
   --color-saas-background-inverted: #0b0b0e;
   --color-saas-background-inverted-hover: #222225;
 
-  --color-dify-logo-dify-logo-blue: #0033ff;
-  --color-dify-logo-dify-logo-black: #000000;
+  --color-genai-logo-genai-logo-blue: #0033ff;
+  --color-genai-logo-genai-logo-black: #000000;
 
 }

@@ -6,8 +6,8 @@ import { basePath } from '@/utils/var'
 export type LogoStyle = 'default' | 'monochromeWhite'
 
 export const logoPathMap: Record<LogoStyle, string> = {
-  default: '/logo/logo.svg',
-  monochromeWhite: '/logo/logo-monochrome-white.svg',
+  default: '/logo/logo.png',
+  monochromeWhite: '/logo/logo-site-dark.png',
 }
 
 export type LogoSize = 'large' | 'medium' | 'small'
@@ -18,13 +18,13 @@ export const logoSizeMap: Record<LogoSize, string> = {
   small: 'w-9 h-4',
 }
 
-type DifyLogoProps = {
+type GenAILogoProps = {
   style?: LogoStyle
   size?: LogoSize
   className?: string
 }
 
-const DifyLogo: FC<DifyLogoProps> = ({
+const GenAILogo: FC<GenAILogoProps> = ({
   style = 'default',
   size = 'medium',
   className,
@@ -36,9 +36,9 @@ const DifyLogo: FC<DifyLogoProps> = ({
     <img
       src={`${basePath}${logoPathMap[themedStyle]}`}
       className={classNames('block object-contain', logoSizeMap[size], className)}
-      alt='Dify logo'
+      alt='GenAI logo'
     />
   )
 }
 
-export default DifyLogo
+export default GenAILogo

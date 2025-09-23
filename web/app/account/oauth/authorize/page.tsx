@@ -144,7 +144,7 @@ export default function OAuthAuthorize() {
       <div className={`mb-4 mt-5 flex flex-col gap-2 ${isLoggedIn ? 'pb-2' : ''}`}>
         <div className='title-4xl-semi-bold'>
           {isLoggedIn && <div className='text-text-primary'>{t('oauth.connect')}</div>}
-          <div className='text-[var(--color-saas-dify-blue-inverted)]'>{authAppInfo?.app_label[language] || authAppInfo?.app_label?.en_US || t('oauth.unknownApp')}</div>
+          <div className='text-[var(--color-saas-genai-blue-inverted)]'>{authAppInfo?.app_label[language] || authAppInfo?.app_label?.en_US || t('oauth.unknownApp')}</div>
           {!isLoggedIn && <div className='text-text-primary'>{t('oauth.tips.notLoggedIn')}</div>}
         </div>
         <div className='body-md-regular text-text-secondary'>{isLoggedIn ? `${authAppInfo?.app_label[language] || authAppInfo?.app_label?.en_US || t('oauth.unknownApp')} ${t('oauth.tips.loggedIn')}` : t('oauth.tips.needLogin')}</div>

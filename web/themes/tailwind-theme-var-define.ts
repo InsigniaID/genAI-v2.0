@@ -750,11 +750,11 @@ const vars = {
 
   'saas-background': 'var(--color-saas-background)',
   'saas-pricing-grid-bg': 'var(--color-saas-pricing-grid-bg)',
-  'saas-dify-blue-static': 'var(--color-saas-dify-blue-static)',
-  'saas-dify-blue-static-hover': 'var(--color-saas-dify-blue-static-hover)',
-  'saas-dify-blue-accessible': 'var(--color-saas-dify-blue-accessible)',
-  'saas-dify-blue-inverted': 'var(--color-saas-dify-blue-inverted)',
-  'saas-dify-blue-inverted-dimmed': 'var(--color-saas-dify-blue-inverted-dimmed)',
+  'saas-dify-blue-static': 'var(--color-saas-genai-blue-static)',
+  'saas-dify-blue-static-hover': 'var(--color-saas-genai-blue-static-hover)',
+  'saas-dify-blue-accessible': 'var(--color-saas-genai-blue-accessible)',
+  'saas-dify-blue-inverted': 'var(--color-saas-genai-blue-inverted)',
+  'saas-dify-blue-inverted-dimmed': 'var(--color-saas-genai-blue-inverted-dimmed)',
 
   'saas-background-inverted': 'var(--color-saas-background-inverted)',
   'saas-background-inverted-hover': 'var(--color-saas-background-inverted-hover)',

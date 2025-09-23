@@ -192,11 +192,11 @@ const translation = {
     sortBy: 'Чорне місто',
     pluginsResult: 'Результати {{num}}',
     empower: 'Розширюйте можливості розробки штучного інтелекту',
-    difyMarketplace: 'Dify Marketplace',
+    difyMarketplace: 'GenAI Marketplace',
     viewMore: 'Дивитись більше',
     noPluginFound: 'Плагін не знайдено',
-    verifiedTip: 'Перевірено Dify',
-    partnerTip: 'Перевірено партнером Dify',
+    verifiedTip: 'Перевірено GenAI',
+    partnerTip: 'Перевірено партнером GenAI',
   },
   task: {
     installingWithError: 'Не вдалося встановити плагіни {{installingLength}}, успіх {{successLength}}, {{errorLength}}',
@@ -223,7 +223,7 @@ const translation = {
   metadata: {
     title: 'Плагіни',
   },
-  difyVersionNotCompatible: 'Поточна версія Dify не сумісна з цим плагіном, будь ласка, оновіть до мінімальної версії: {{minimalDifyVersion}}',
+  difyVersionNotCompatible: 'Поточна версія GenAI не сумісна з цим плагіном, будь ласка, оновіть до мінімальної версії: {{minimalGenAIVersion}}',
   requestAPlugin: 'Запросити плагін',
   publishPlugins: 'Публікація плагінів',
   auth: {

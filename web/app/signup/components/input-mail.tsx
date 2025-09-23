@@ -40,7 +40,7 @@ export default function Form({
       return
     }
     const res = await submitMail({ email, language: locale })
-    if((res as MailSendResponse).result === 'success')
+    if ((res as MailSendResponse).result === 'success')
       onSuccess(email, (res as MailSendResponse).data)
   }, [email, locale, submitMail, t])
 
@@ -83,17 +83,17 @@ export default function Form({
     {!systemFeatures.branding.enabled && <>
       <div className="system-xs-regular mt-3 block w-full text-text-tertiary">
         {t('login.tosDesc')}
-              &nbsp;
+        &nbsp;
         <Link
           className='system-xs-medium text-text-secondary hover:underline'
           target='_blank' rel='noopener noreferrer'
-          href='https://dify.ai/terms'
+          href='https://genai.ai/terms'
         >{t('login.tos')}</Link>
-              &nbsp;&&nbsp;
+        &nbsp;&&nbsp;
         <Link
           className='system-xs-medium text-text-secondary hover:underline'
           target='_blank' rel='noopener noreferrer'
-          href='https://dify.ai/privacy'
+          href='https://genai.ai/privacy'
         >{t('login.pp')}</Link>
       </div>
     </>}

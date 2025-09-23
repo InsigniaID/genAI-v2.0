@@ -154,7 +154,7 @@ async function base<T>(url: string, options: FetchOptionType = {}, otherOptions:
 
   // ! For Marketplace API, help to filter tags added in new version
   if (isMarketplaceAPI)
-    (headers as any).set('X-Dify-Version', APP_VERSION)
+    (headers as any).set('X-GenAI-Version', APP_VERSION)
 
   const client = baseClient.extend({
     hooks: {

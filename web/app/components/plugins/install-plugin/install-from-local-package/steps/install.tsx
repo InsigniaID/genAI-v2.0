@@ -105,7 +105,7 @@ const Installed: FC<Props> = ({
   }
 
   const { langGeniusVersionInfo } = useAppContext()
-  const isDifyVersionCompatible = useMemo(() => {
+  const isGenAIVersionCompatible = useMemo(() => {
     if (!langGeniusVersionInfo.current_version)
       return true
     return gte(langGeniusVersionInfo.current_version, payload.meta.minimum_dify_version ?? '0.0.0')
@@ -122,7 +122,7 @@ const Installed: FC<Props> = ({
               components={{ trustSource: <span className='system-md-semibold' /> }}
             />
           </p>
-          {!isDifyVersionCompatible && (
+          {!isGenAIVersionCompatible && (
             <p className='system-md-regular flex items-center gap-1 text-text-warning'>
               {t('plugin.difyVersionNotCompatible', { minimalDifyVersion: payload.meta.minimum_dify_version })}
             </p>

@@ -191,12 +191,12 @@ const translation = {
     noPluginFound: 'Плагин не найден',
     sortBy: 'Черный город',
     empower: 'Расширьте возможности разработки ИИ',
-    difyMarketplace: 'Торговая площадка Dify',
+    difyMarketplace: 'Торговая площадка GenAI',
     viewMore: 'Подробнее',
     and: 'и',
     discover: 'Обнаруживать',
-    verifiedTip: 'Подтверждено Dify',
-    partnerTip: 'Подтверждено партнером Dify',
+    verifiedTip: 'Подтверждено GenAI',
+    partnerTip: 'Подтверждено партнером GenAI',
   },
   task: {
     installing: 'Установка плагинов {{installingLength}}, 0 готово.',
@@ -223,7 +223,7 @@ const translation = {
   metadata: {
     title: 'Плагины',
   },
-  difyVersionNotCompatible: 'Текущая версия Dify не совместима с этим плагином, пожалуйста, обновите до минимально необходимой версии: {{minimalDifyVersion}}',
+  difyVersionNotCompatible: 'Текущая версия GenAI не совместима с этим плагином, пожалуйста, обновите до минимально необходимой версии: {{minimalGenAIVersion}}',
   requestAPlugin: 'Запросите плагин',
   publishPlugins: 'Публикация плагинов',
   auth: {

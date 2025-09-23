@@ -213,9 +213,9 @@ const translation = {
     pluginsResult: '{{num}} resultados',
     discover: 'Descubrir',
     and: 'y',
-    difyMarketplace: 'Mercado de Dify',
-    verifiedTip: 'Verificado por Dify',
-    partnerTip: 'Verificado por un socio de Dify',
+    difyMarketplace: 'Mercado de GenAI',
+    verifiedTip: 'Verificado por GenAI',
+    partnerTip: 'Verificado por un socio de GenAI',
   },
   task: {
     installing: 'Instalando plugins {{installingLength}}, 0 hecho.',
@@ -246,7 +246,7 @@ const translation = {
     title: 'Complementos',
   },
   difyVersionNotCompatible:
-    'La versión actual de Dify no es compatible con este plugin, por favor actualiza a la versión mínima requerida: {{minimalDifyVersion}}',
+    'La versión actual de GenAI no es compatible con este plugin, por favor actualiza a la versión mínima requerida: {{minimalGenAIVersion}}',
   requestAPlugin: 'Solicitar un plugin',
   publishPlugins: 'Publicar plugins',
   auth: {

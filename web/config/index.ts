@@ -50,12 +50,12 @@ const getStringConfig = (
 export const API_PREFIX = getStringConfig(
   process.env.NEXT_PUBLIC_API_PREFIX,
   DatasetAttr.DATA_API_PREFIX,
-  'http://localhost:5001/console/api',
+  'http://localhost/console/api',
 )
 export const PUBLIC_API_PREFIX = getStringConfig(
   process.env.NEXT_PUBLIC_PUBLIC_API_PREFIX,
   DatasetAttr.DATA_PUBLIC_API_PREFIX,
-  'http://localhost:5001/api',
+  'http://localhost/api',
 )
 export const MARKETPLACE_API_PREFIX = getStringConfig(
   process.env.NEXT_PUBLIC_MARKETPLACE_API_PREFIX,
