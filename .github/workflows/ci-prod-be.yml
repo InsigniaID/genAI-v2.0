@@ -42,7 +42,7 @@ jobs:
       - name: Build and push Docker image
         env:
           ACR_REGISTRY: ${{ secrets.ACR_LOGIN_SERVER }}
-          ACR_REPOSITORY: genai-v2
+          ACR_REPOSITORY: genai-be-v2
           VERSION: ${{ steps.version.outputs.version }}
         working-directory: ./api
         run: |
